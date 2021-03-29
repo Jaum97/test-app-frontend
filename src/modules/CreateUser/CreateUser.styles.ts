@@ -40,7 +40,7 @@ export const SquadInfoContainer = styled(RowContainer)`
   }
 `;
 
-export const TeamInfoContainer = styled(RowContainer)`
+export const UserInfoContainer = styled(RowContainer)`
   @media (max-width: 992px) {
     flex-direction: row;
     width: auto;

@@ -13,7 +13,6 @@ function InputField(props: IProps) {
     id,
     label,
     name,
-    errorMessage,
     maxLength,
     value,
     infoMsg,
@@ -33,7 +32,7 @@ function InputField(props: IProps) {
   };
 
   return (
-    <InputWrapper secondary={secondary}>
+    <InputWrapper secondary={secondary} hasError={hasError}>
       {mask ? (
         <InputMask {...inputProps} mask={mask} />
       ) : (
@@ -42,9 +41,9 @@ function InputField(props: IProps) {
 
       <label htmlFor={id}>{label}</label>
 
-      {hasError ? (
+      {/* {hasError ? (
         <span className="error-msg">{errorMessage || "Campo inválido"}</span>
-      ) : null}
+      ) : null} */}
 
       {infoMsg ? <span className="info-msg">{infoMsg}</span> : null}
     </InputWrapper>

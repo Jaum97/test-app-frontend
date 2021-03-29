@@ -64,7 +64,7 @@ function DashboardContainer(): JSX.Element {
     (async () => {
       await deleteUser(id);
 
-      displaySuccess("Team deleted!");
+      displaySuccess("User deleted!");
     })();
 
     dispatch(RemoveUserFromStore(userToRemove));

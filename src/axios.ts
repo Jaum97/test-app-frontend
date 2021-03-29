@@ -2,7 +2,7 @@ import axios, { AxiosInstance } from "axios";
 
 export const BYPASS_CORS_PROXY = "https://cors-anywhere.herokuapp.com";
 
-const API_URL = "http://192.168.0.96:8080";
+const API_URL = "http://192.168.0.96:5000";
 
 export const axiosInstance: AxiosInstance = axios.create({
   //   baseURL: `${BYPASS_CORS_PROXY}/${API_URL}`,

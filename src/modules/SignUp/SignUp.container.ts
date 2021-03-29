@@ -31,6 +31,8 @@ function SignUpContainer(): JSX.Element {
       passwordInvalid && "password",
     ].filter(Boolean) as string[];
 
+    console.log({ invalidInputs })
+
     setInputsWithError(invalidInputs);
 
     return Boolean(!invalidInputs.length);
@@ -52,9 +54,7 @@ function SignUpContainer(): JSX.Element {
         password,
       };
 
-      const res = await insertUserDB(toInsert);
-
-      console.log({ res });
+      await insertUserDB(toInsert);
 
       history.push(routesEnum.LOGIN);
     })();

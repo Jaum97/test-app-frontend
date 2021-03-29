@@ -40,7 +40,7 @@ function Login(props: IViewProps): JSX.Element {
                 value={username}
               />
               <InputField
-                id="login"
+                id="email"
                 hasError={isInvalid("email")}
                 label="Email"
                 onChange={updateEmail}

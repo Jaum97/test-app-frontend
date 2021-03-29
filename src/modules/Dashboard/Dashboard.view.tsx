@@ -5,7 +5,7 @@ import {
   Center,
   ColumnContainer,
   Content,
-  TeamInfoContainer,
+  UserInfoContainer,
   Wrapper,
 } from "../CreateUser/CreateUser.styles";
 import { Placeholder } from "./Dashboard.styles";
@@ -19,7 +19,7 @@ function Dashboard(props: IViewProps): JSX.Element {
     <Content>
       <Wrapper>
         <WhiteSection title="Users" onClick={addNewUser}>
-          <TeamInfoContainer>
+          <UserInfoContainer>
             <ColumnContainer>
               <Center>
                 {users.length ? (
@@ -33,7 +33,7 @@ function Dashboard(props: IViewProps): JSX.Element {
                 )}
               </Center>
             </ColumnContainer>
-          </TeamInfoContainer>
+          </UserInfoContainer>
         </WhiteSection>
       </Wrapper>
     </Content>

@@ -15,7 +15,7 @@ import { saveUserInDB } from "./CreateUser.services";
 import { IViewProps } from "./CreateUser.types";
 import View from "./CreateUser.view";
 
-function CreateTeamContainer(): JSX.Element {
+function CreateUserContainer(): JSX.Element {
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -109,4 +109,4 @@ function CreateTeamContainer(): JSX.Element {
   return createElement(View, viewProps);
 }
 
-export default CreateTeamContainer;
+export default CreateUserContainer;

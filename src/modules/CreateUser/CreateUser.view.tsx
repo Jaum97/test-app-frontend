@@ -8,7 +8,7 @@ import {
   Input,
   InputContainer,
   InputTitle,
-  TeamInfoContainer,
+  UserInfoContainer,
   Wrapper,
 } from "./CreateUser.styles";
 import { IViewProps } from "./CreateUser.types";
@@ -26,7 +26,7 @@ function CreateUser(props: IViewProps): JSX.Element {
     <Content>
       <Wrapper>
         <WhiteSection title={title}>
-          <TeamInfoContainer>
+          <UserInfoContainer>
             <ColumnContainer>
               <Center>
                 <InputContainer>
@@ -68,7 +68,7 @@ function CreateUser(props: IViewProps): JSX.Element {
                 </InputContainer>
               </Center>
             </ColumnContainer>
-          </TeamInfoContainer>
+          </UserInfoContainer>
           <ButtonWrapper>
             <ButtonPrimary onClick={saveUser}>SAVE</ButtonPrimary>
           </ButtonWrapper>

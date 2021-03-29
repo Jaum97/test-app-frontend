@@ -1,7 +1,10 @@
 import { colors } from "src/modules/styles/colors";
 import styled from "styled-components";
 
-export const InputWrapper = styled.div<{ secondary: boolean }>`
+export const InputWrapper = styled.div<{
+  secondary: boolean;
+  hasError: boolean;
+}>`
   position: relative;
   display: flex;
   width: 100%;
@@ -27,13 +30,15 @@ export const InputWrapper = styled.div<{ secondary: boolean }>`
     border-radius: 24px;
     color: ${colors.grey};
     background: ${colors.white};
-    border: solid 1px ${colors.primary};
+    border: solid 1px ${({ hasError }) =>
+      hasError ? colors.alternatePrimary : colors.primary};
     width: 100%;
     font-size: inherit;
 
     &:focus,
     &:valid {
-      border: solid 1px ${colors.primary};
+      border: solid 1px ${({ hasError }) =>
+        hasError ? colors.alternatePrimary : colors.primary};
 
       + label {
         top: 12px;
@@ -54,15 +59,6 @@ export const InputWrapper = styled.div<{ secondary: boolean }>`
       }
     }
 
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus,
-    &:-webkit-autofill:active {
-      -webkit-box-shadow: 0 0 0 30px #b34444 inset !important;
-      -webkit-text-fill-color: #eeeeee !important;
-      box-shadow: 0 0 0 30px #b34444 inset !important;
-    }
-  }
   .error-msg {
     display: none;
   }

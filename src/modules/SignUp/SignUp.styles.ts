@@ -25,10 +25,3 @@ export const ButtonWrapper = styled.div`
   padding-top: 24px;
 `;
 
-// export const TeamFormationContainer = styled(GradientSectionContainer)`
-// 	flex-direction: column;
-// 	justify-content: space-between;
-// 	margin: 16px 0px;
-// 	min-height: 740px;
-// 	padding: 16px 0px;
-// `
