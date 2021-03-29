@@ -1,9 +1,8 @@
 import React, { StrictMode } from "react";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import Routes from "./modules/routes";
-import { ResetDefaultStyles } from "./modules/styles/defaults";
-import { persistor, store } from "./store";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faPencilAlt,
   faSave,
@@ -14,7 +13,10 @@ import {
   faTrash,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
+import Routes from "./modules/routes";
+import { ResetDefaultStyles } from "./modules/styles/defaults";
+import { persistor, store } from "./store";
+
 library.add(
   faSort,
   faSortUp,

@@ -1,10 +1,11 @@
-import { pipe, curry, path, omit } from "ramda";
+import { curry, omit, path, pipe } from "ramda";
 import { createElement, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { TokenActions } from "src/store/ducks/token";
 import { UserActions } from "src/store/ducks/user";
 import { displayError } from "src/utils/cogoToast";
+
 import routesEnum from "../routes/enum";
 import { attemptLogin } from "./Login.service";
 import { IViewProps } from "./Login.types";

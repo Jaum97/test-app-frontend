@@ -1,6 +1,7 @@
 import { axiosInstance } from "src/axios";
 import { Maybe } from "src/interfaces/common";
 import { displayError } from "src/utils/cogoToast";
+
 import { TokensType, User } from "../User/User.model";
 
 export const attemptLogin = async (

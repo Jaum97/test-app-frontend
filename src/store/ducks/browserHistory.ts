@@ -1,9 +1,9 @@
 import { Action } from "redux";
 import { createActions, createReducer } from "reduxsauce";
 import {
+  IBrowserHistoryActionCreators,
   IBrowserHistoryActions,
   IStoreBrowserHistory,
-  IBrowserHistoryActionCreators,
 } from "src/modules/History/History.types";
 
 export const { Types, Creators }: IBrowserHistoryActions = createActions({

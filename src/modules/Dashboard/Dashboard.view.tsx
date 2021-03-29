@@ -1,15 +1,16 @@
-import { IViewProps } from "./Dashboard.types";
 import React from "react";
-import { Placeholder } from "./Dashboard.styles";
-import UsersTable from "./UsersTable/UsersTable.view";
+
 import { WhiteSection } from "../Components/WhiteSection";
 import {
-  Content,
-  Wrapper,
-  TeamInfoContainer,
-  ColumnContainer,
   Center,
+  ColumnContainer,
+  Content,
+  TeamInfoContainer,
+  Wrapper,
 } from "../CreateUser/CreateUser.styles";
+import { Placeholder } from "./Dashboard.styles";
+import { IViewProps } from "./Dashboard.types";
+import UsersTable from "./UsersTable/UsersTable.view";
 
 function Dashboard(props: IViewProps): JSX.Element {
   const { users, editUser, addNewUser, removeUser } = props;

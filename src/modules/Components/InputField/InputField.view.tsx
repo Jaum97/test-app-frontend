@@ -1,7 +1,7 @@
 import React from "react";
 import InputMask from "react-input-mask";
-import { InputWrapper } from "./InputField.styles";
 
+import { InputWrapper } from "./InputField.styles";
 import { IProps } from "./InputField.types";
 
 function InputField(props: IProps) {

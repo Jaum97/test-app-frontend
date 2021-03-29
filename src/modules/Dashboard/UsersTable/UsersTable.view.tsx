@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { User } from "src/modules/User/User.model";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -14,8 +15,6 @@ import {
   TableWrapper,
 } from "./UsersTable.styles";
 import { IProps, ISortBy } from "./UsersTable.types";
-import { User } from "src/modules/User/User.model";
-import { displayError } from "src/utils/cogoToast";
 
 function UsersTable(props: IProps): JSX.Element {
   const { users, editUser, removeUser } = props;

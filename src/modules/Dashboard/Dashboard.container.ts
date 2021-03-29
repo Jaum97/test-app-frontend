@@ -1,11 +1,12 @@
-import { complement, eqProps, pick, propEq } from "ramda";
-import { createElement, useEffect, useState } from "react";
+import { propEq } from "ramda";
+import { createElement, useEffect } from "react";
 import { shallowEqual, useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 import { useTypedSelector } from "src/hooks/useTypedSelector";
 import { UsersActions } from "src/store/ducks/users";
 import { UserToEditActions } from "src/store/ducks/userToEdit";
 import { displayError, displaySuccess } from "src/utils/cogoToast";
+
 import routesEnum from "../routes/enum";
 import { User } from "../User/User.model";
 import { deleteUser, fetchUsers } from "./Dashboard.services";

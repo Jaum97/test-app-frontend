@@ -1,7 +1,8 @@
 interface IRequiredProps {
-	children: React.ReactChildren | string
-	onClick: () => void
-	gradient?: boolean
+  children: React.ReactChildren | string;
+  onClick: () => void;
+  gradient?: boolean;
 }
 
-export type IProps = Omit<JSX.IntrinsicElements['button'], 'ref'> & IRequiredProps
+export type IProps = Omit<JSX.IntrinsicElements["button"], "ref"> &
+  IRequiredProps;

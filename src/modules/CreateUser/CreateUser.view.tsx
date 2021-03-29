@@ -1,7 +1,5 @@
-import React from "react";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { ButtonPrimary } from "../Components/ButtonPrimary";
+import { WhiteSection } from "../Components/WhiteSection";
 import {
   ButtonWrapper,
   Center,
@@ -11,13 +9,9 @@ import {
   InputContainer,
   InputTitle,
   TeamInfoContainer,
-  Title,
   Wrapper,
 } from "./CreateUser.styles";
-
 import { IViewProps } from "./CreateUser.types";
-import { WhiteSection } from "../Components/WhiteSection";
-import { ButtonPrimary } from "../Components/ButtonPrimary";
 
 function CreateUser(props: IViewProps): JSX.Element {
   const { isEdit, inputsWithError, user, saveUser, updateUser } = props;

@@ -1,27 +1,19 @@
-import { IViewProps } from "./Login.types";
-import React, { useState } from "react";
+import { ButtonPrimary } from "../Components/ButtonPrimary";
+import { InputField } from "../Components/InputField";
+import { WhiteSection } from "../Components/WhiteSection";
+
+import { Column } from "../styles/grid";
+import { Center } from "../styles/Styles.components";
+
 import {
   ButtonWrapper,
   GradientSectionContainer,
   LoginBody,
   SingupWrapper,
 } from "./Login.styles";
-import { Column } from "../styles/grid";
-import { Center } from "../styles/Styles.components";
-import { WhiteSection } from "../Components/WhiteSection";
-import { InputField } from "../Components/InputField";
-import { ButtonPrimary } from "../Components/ButtonPrimary";
-import { pipe, path, curry, omit } from "ramda";
-import { attemptLogin } from "./Login.service";
-import { useHistory } from "react-router-dom";
-import routesEnum from "../routes/enum";
-import { useDispatch } from "react-redux";
-import { TokenActions } from "src/store/ducks/token";
-import { UserActions } from "src/store/ducks/user";
-import { displayError } from "src/utils/cogoToast";
+import { IViewProps } from "./Login.types";
 
 function Login(props: IViewProps): JSX.Element {
-  // eslint-disable-next-line no-empty-pattern
   const {
     updateLogin,
     login,

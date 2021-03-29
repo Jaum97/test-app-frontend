@@ -1,9 +1,9 @@
 export class Token {
-	public accessToken: string
-	public refreshToken: string
+  public accessToken: string;
+  public refreshToken: string;
 
-	constructor() {
-		this.accessToken = ''
-		this.refreshToken = ''
-	}
+  constructor() {
+    this.accessToken = "";
+    this.refreshToken = "";
+  }
 }

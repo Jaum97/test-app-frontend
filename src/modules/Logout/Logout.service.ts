@@ -1,5 +1,6 @@
 import { store } from "src/store";
 import { TokenActions } from "src/store/ducks/token";
+
 import { IStoreToken } from "../Token/Token.types";
 
 export const logout = (): void => {

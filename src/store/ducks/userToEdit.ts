@@ -1,7 +1,8 @@
+import { Action } from "redux";
 import { createActions, createReducer } from "reduxsauce";
 import { User } from "src/modules/User/User.model";
 import { IUserToEditActions } from "src/modules/User/User.types";
-import { Action } from "redux";
+
 const INITIAL_STATE = new User();
 
 const set = (state: User = INITIAL_STATE, action: { user: User }): User =>

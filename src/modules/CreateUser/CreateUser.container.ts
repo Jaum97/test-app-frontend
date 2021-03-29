@@ -1,18 +1,17 @@
-import { append, eqProps, mergeLeft, mergeRight, pipe, prop } from "ramda";
+import { eqProps, mergeLeft } from "ramda";
 import { ChangeEvent, createElement, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { useTypedSelector } from "src/hooks/useTypedSelector";
-import user from "src/store/ducks/user";
 import { UsersActions } from "src/store/ducks/users";
 import { UserToEditActions } from "src/store/ducks/userToEdit";
 import { displayError, displaySuccess } from "src/utils/cogoToast";
 import { VALID_EMAIL } from "src/utils/email";
 import { getRandomId } from "src/utils/string";
+
 import routesEnum from "../routes/enum";
 import { User } from "../User/User.model";
 import { saveUserInDB } from "./CreateUser.services";
-
 import { IViewProps } from "./CreateUser.types";
 import View from "./CreateUser.view";
 
@@ -20,7 +19,7 @@ function CreateTeamContainer(): JSX.Element {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const { updateUserToEdit, resetUserToEdit } = UserToEditActions;
+  const { resetUserToEdit } = UserToEditActions;
   const { addUser: addStoreUser, updateOneUser } = UsersActions;
 
   const { userToEdit, users } = useTypedSelector(["userToEdit", "users"]);

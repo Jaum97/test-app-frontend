@@ -1,5 +1,6 @@
 import { createLinearGrad } from "src/utils/styles";
 import styled from "styled-components";
+
 import { colors } from "../styles/colors";
 
 export const GradientSectionContainer = styled.div`

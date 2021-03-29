@@ -1,7 +1,7 @@
 import styled from "styled-components";
+
 import { colors } from "../styles/colors";
 import { Row } from "../styles/grid";
-
 import { IInputStyledProps } from "./CreateUser.types";
 
 export const ButtonWrapper = styled.div`
@@ -95,9 +95,6 @@ export const InputContainer = styled.div`
   justify-content: center;
   align-items: flex-start;
 `;
-
-
-
 
 export const Spacer = styled.div`
   width: 32px;

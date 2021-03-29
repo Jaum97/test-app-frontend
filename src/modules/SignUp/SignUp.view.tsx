@@ -1,15 +1,14 @@
-import { IViewProps } from "./SignUp.types";
-import { useState } from "react";
+import { ButtonPrimary } from "../Components/ButtonPrimary";
+import { InputField } from "../Components/InputField";
+import { WhiteSection } from "../Components/WhiteSection";
+import { Column } from "../styles/grid";
+import { Center } from "../styles/Styles.components";
 import {
   ButtonWrapper,
   GradientSectionContainer,
   LoginBody,
 } from "./SignUp.styles";
-import { Column } from "../styles/grid";
-import { Center } from "../styles/Styles.components";
-import { WhiteSection } from "../Components/WhiteSection";
-import { InputField } from "../Components/InputField";
-import { ButtonPrimary } from "../Components/ButtonPrimary";
+import { IViewProps } from "./SignUp.types";
 
 function Login(props: IViewProps): JSX.Element {
   const {

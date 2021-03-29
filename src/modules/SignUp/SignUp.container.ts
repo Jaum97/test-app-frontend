@@ -1,8 +1,9 @@
-import { pipe, path, curry } from "ramda";
+import { curry, path, pipe } from "ramda";
 import { ChangeEvent, createElement, useState } from "react";
 import { useHistory } from "react-router";
 import { displayError } from "src/utils/cogoToast";
 import { VALID_EMAIL } from "src/utils/email";
+
 import routesEnum from "../routes/enum";
 import { insertUserDB } from "./SignUp.service";
 import { IViewProps } from "./SignUp.types";

@@ -1,6 +1,7 @@
 import { colors } from "src/modules/styles/colors";
 import { createLinearGrad } from "src/utils/styles";
 import styled from "styled-components";
+
 import { IProps } from "./ButtonPrimary.types";
 
 export const Button = styled.button<IProps>`
@@ -9,10 +10,13 @@ export const Button = styled.button<IProps>`
   font-weight: 500;
   padding: 12px 48px;
   border: none;
-  background: ${({ gradient: g }) => g ? createLinearGrad(
-    colors.alternatePrimary ,
-    colors.alternateSecondary + ' 65%' 
-  ) : colors.primary};
+  background: ${({ gradient: g }) =>
+    g
+      ? createLinearGrad(
+          colors.alternatePrimary,
+          colors.alternateSecondary + " 65%"
+        )
+      : colors.primary};
   min-height: 48px;
   outline: 0;
   object-fit: contain;

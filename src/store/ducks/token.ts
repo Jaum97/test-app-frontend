@@ -1,9 +1,9 @@
 import { Action } from "redux";
 import { createActions, createReducer } from "reduxsauce";
 import {
-  ITokenActions,
   IStoreToken,
   ITokenActionCreators,
+  ITokenActions,
 } from "src/modules/Token/Token.types";
 
 export const { Types, Creators }: ITokenActions = createActions({

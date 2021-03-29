@@ -1,11 +1,11 @@
 import { combineReducers, Reducer, ReducersMapObject } from "redux";
+
 import { IStore } from "../types";
 import browserHistory from "./browserHistory";
+import tokens from "./token";
 import user from "./user";
 import users from "./users";
 import userToEdit from "./userToEdit";
-
-import tokens from "./token";
 
 const reducers: ReducersMapObject<IStore> = {
   tokens,

@@ -1,6 +1,5 @@
-import React from "react";
 import { useDispatch } from "react-redux";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { useTypedSelector } from "src/hooks/useTypedSelector";
 import routesEnum from "src/modules/routes/enum";
 import { TokenActions } from "src/store/ducks/token";

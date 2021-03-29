@@ -1,7 +1,7 @@
+import { colors } from "src/modules/styles/colors";
 import styled from "styled-components";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { colors } from "src/modules/styles/colors";
 
 export const TableWrapper = styled.table`
   border-collapse: collapse;
