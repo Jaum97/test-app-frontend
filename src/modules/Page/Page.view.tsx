@@ -8,7 +8,7 @@ function Page({ children }: { children: JSX.Element }) {
     <Fragment>
       <Header />
       <S.Main>{children}</S.Main>
-      <S.Footer>2020 - All rights reserved</S.Footer>
+      <S.Footer>2021 - All rights reserved</S.Footer>
     </Fragment>
   );
 }
